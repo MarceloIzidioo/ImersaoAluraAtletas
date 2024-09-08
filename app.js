@@ -1,6 +1,5 @@
 function pesquisar() {
     let section = document.getElementById("resultados-pesquisa"); // Seleciona a seção onde os resultados serão exibidos
-
     let campoPesquisa = document.getElementById("campo-pesquisa").value
 
     console.log(campoPesquisa)
@@ -44,6 +43,10 @@ function pesquisar() {
 
     // Substitui o conteúdo HTML da seção 'resultados-pesquisa' pelos resultados construídos
     section.innerHTML = resultados;
+
+    // Limpa a caixa de texto após a pesquisa
+    document.getElementById("campo-pesquisa").value = ""
+
 }
 
 
